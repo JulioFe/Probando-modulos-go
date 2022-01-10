@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	course "github.com/JulioFe/Probando-modulos-go/tree/poo/Course"
 )
 
 func main() {
@@ -19,9 +21,6 @@ func main() {
 	// }
 	//GoPointer := &CourseGo
 	//fmt.Println(CourseGo.name)
-	CourseGo.AllClasess()
-	fmt.Println(CourseGo.Price)
-	CourseGo.SetPrice(15000)
-	fmt.Println(CourseGo.Price)
+	fmt.Println(CourseGo)
 
 }
