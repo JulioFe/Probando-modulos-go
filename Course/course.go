@@ -3,10 +3,18 @@ package course
 import "fmt"
 
 type course struct {
-	Name    string
+	name    string
 	UsersID []uint
 	Clasess map[uint]string
 	Price   uint
+}
+
+func (c *course) setName(name string) {
+	c.name = name
+}
+
+func (c *course) Name() string {
+	return c.name
 }
 
 func New(name string, price uint) *course {
@@ -14,7 +22,7 @@ func New(name string, price uint) *course {
 		price = 30
 	}
 	return &course{
-		Name:  name,
+		name:  name,
 		Price: price,
 	}
 }
